@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@400;500;600;700&display=swap');
+
+* , *::before , *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+body {
+    font-family: 'fredoka', sans-serif;
+    background-color: #fcf3e5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #032d1f;
+}
+
+.layout {
+    padding: 15px;
+    margin: 5px;
+}
+
+.logo-container {
+    background-color: #00251a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    width: 300px;
+    height: auto;
+}
+
+.slogan-align {
+    
+}
+
+#logo {
+    color: white;
+    font-family: 'chewy', cursive;
+    font-size: 7rem;
+    margin-left: 100px;
+}
+
+span {
+    color: #a6de73;
+}
+
+.slogan {
+    color: white;
+    font-family: 'chewy', cursive;
+    font-size: 1.6rem;
+    text-align: end;
+}
+
+.register {
+    background-color: #a6de73;
+    color: #00251a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.login {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
