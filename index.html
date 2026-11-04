@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="layout">
         <header>
             <div class="logo-container">
                 <div class="slogan-align">
@@ -16,9 +15,11 @@
                     <p class="slogan">A bagunça fica com o Lenny.</p>
                     <p class="slogan"> As contas ficam <span>em ordem.</span></p>
                 </div>   
-                <img src="imagens/Lennypng400px.png" alt="">
-                <button class="register">Cadastrar</button>
-                <button class="login">Login</button>
+                <img src="imagens/Lennypng400px.png" alt="Lenny, o mascote do aplicativo parado com a lingua para fora">
+                <div class="header-buttons">
+                    <button class="register">Cadastrar</button>
+                    <button class="login">Login</button>
+                </div>
             </div> 
             <nav class="navbar">
                 <a href="#funcionamento">Entenda</a>
@@ -26,7 +27,29 @@
                 <a href="#profissional">Profissional</a>
             </nav>
         </header>
+    <main class="layout">
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h2>Seu dinheiro sob controle!</h2>
+                <p>Organize suas receitas, despesas e acompanhe sua vida financeira.</p>
+                <button class="register">Começar agora</button>
+            </div>
+            <div class="hero-image">
+                <img src="imagens/LennyCorrendo500px.png" alt="Lenny, o mascote do aplicativo correndo">
+            </div>
+        </section>
+        <section id="funcionamento">
+            <h2>Como funciona?</h2>
+        </section>
+        <section id="pessoal">
+            <h2>Controle financeiro pessoal</h2>
+        </section>
+        <section id="profissional">
+            <h2>Controle financeiro profissional</h2>
+        </section>   
     </main>
-    <footer>Teste</footer>
+    <footer class="footer">
+        <p>&copy; 2026 Lenny Grana. Todos os direitos reservados.</p>
+    </footer>
 </body>    
 </html>

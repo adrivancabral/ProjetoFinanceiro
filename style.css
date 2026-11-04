@@ -1,24 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@400;500;600;700&display=swap');
 
+:root {
+    --verde-escuro: #032d1f;
+    --verde-medio: #00251a;
+    --verde-claro: #a6de73;
+    --creme: #fcf3e5;
+    --branco: #ffffff;
+    --texto: #333333;   
+}
+
 * , *::before , *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'fredoka', sans-serif;
-    background-color: #fcf3e5;
-    color: #333;
+    background-color: var(--creme);
+    color: var(--texto);
     line-height: 1.6;
 }
 
 header {
+    background-color: var(--verde-escuro);
+    padding: 15px 5%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #032d1f;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    font-family: inherit;
 }
 
 .layout {
@@ -27,57 +47,223 @@ header {
 }
 
 .logo-container {
-    background-color: #00251a;
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .logo-container img {
-    width: 300px;
+    width: 75px;
     height: auto;
-}
-
-.slogan-align {
-    
+    object-fit: contain;
 }
 
 #logo {
-    color: white;
+    color: var(--branco);
     font-family: 'chewy', cursive;
-    font-size: 7rem;
-    margin-left: 100px;
+    font-size: 2.7rem;
+    line-height: 1.1;
 }
 
-span {
-    color: #a6de73;
+#logo span, .slogan span {
+    color: var(--verde-claro);   
 }
 
 .slogan {
-    color: white;
-    font-family: 'chewy', cursive;
-    font-size: 1.6rem;
-    text-align: end;
+    color: var(--branco);
+    font-family: 'fredoka', sans-serif;
+    font-size: 0.95rem;
+    text-align: right;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: var(--verde-claro);
+}
+
+.register, .login {
+    padding: 11px 22px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
 .register {
-    background-color: #a6de73;
-    color: #00251a;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: opacity 0.2s;
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
+    border: 2px solid var(--verde-claro);
 }
 
-.login {
+.register:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.login { 
     background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    padding: 8px 18px;
+    color: var(--branco);
+    border: 2px solid var(--branco);
+}
+
+.login:hover {
+    background-color: var(--branco);
+    color: var(--verde-escuro);
+}
+
+.layout {
+    width: 94%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 25px 18px;
+    background-color: var(--branco);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 37, 26, 0.08);
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    color: var(--verde-escuro);
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    max-width: 480px;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 320px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    object-fit: contain;
+}
+
+#funcionamento, #pessoal, #profissional {
+    background-color: var(--branco);
+    padding: 25px 20px;
+    margin-top: 30px;
     border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 10px;
+    box-shadow: 0 5px 20px rgba(0, 37, 26, 0.06);
+    scroll-margin-top: 25px;
+}
+
+#funcionamento h2, #pessoal h2, #profissional h2 {
+    color: var(--verde-escuro);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+@media (min-width: 501px) {
+    
+    #logo {
+        font-size: 3.2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.4rem;
+    }
+
+    .hero {
+        padding: 35px;
+    }
+
+    #funcionamento, #pessoal, #profissional {
+        padding: 35px;
+    }
+}
+
+@media (min-width: 901px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .navbar {
+        gap: 25px;
+    }
+
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        padding: 45px;
+        gap: 40px;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-image img {
+        max-width: 430px;
+    }
 }
