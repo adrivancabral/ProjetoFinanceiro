@@ -297,8 +297,12 @@ button {
     .hero {
         flex-direction: row;
         text-align: left;
-        padding: 45px;
-        gap: 40px;
+        padding: 45px 65px;
+        gap: 20px;
+    }
+
+    .hero-content {
+        flex: 1;
     }
 
     .hero-content h2 {
@@ -310,8 +314,16 @@ button {
         margin-right: 0;
     }
 
+    .hero-image {
+        flex: 0 0 40%;
+        max-width: none;
+        justify-content: center;
+        transform: translateX(-70px);
+    }
+
     .hero-image img {
-        max-width: 430px;
+        width: 100%;
+        max-width: 380px;
     }
 
     #conteudo-funcionamento {
