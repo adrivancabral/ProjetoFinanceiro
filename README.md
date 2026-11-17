@@ -14,7 +14,7 @@
 ![Página inicial do Lenny Grana](screenshots/tela-inicial.png)
 
 ### Página de cadastro
-![Página de cadastro do Lenny Grana]()
+![Página de cadastro do Lenny Grana](screenshots/tela-cadastro.png)
 
 ---
 ## 📌 Progresso do desenvolvimento
@@ -24,7 +24,7 @@
 - [x] Estrutura HTML da página inicial.
 - [x] Estilização CSS da página inicial.
 - [x] Estrutura HTML da página de cadastro.
-- [ ] Estilização CSS da página de cadastro.
+- [x] Estilização CSS da página de cadastro.
 
 ### 🚀 Funcionalidades
 
@@ -91,26 +91,29 @@ Conforme o desenvolvimento avançar, serão incorporadas novas tecnologias:
 O projeto está organizado da seguinte forma:
 
 ```text
-Lenny Grana/
+G:.
+│   cadastro.html
+│   index.html
+│   README.md
 │
-├── cadastro.html
-├── index.html
-├── README.md
+├───css
+│       cadastro.css
+│       style.css
 │
-├── css/
-│   ├── cadastro.css
-│   └── style.css
+├───imagens
+│       LennyCorrendo.png
+│       LennyCorrendo500px.png
+│       LennyCorrendoTeste.jfif
+│       Lennypng.png
+│       Lennypng400px.png
+│       Lennypng400px.xcf
 │
-├── imagens/
-│   ├── LennyCorrendo.png
-│   ├── LennyCorrendo500px.png
-│   ├── LennyCorrendoTeste.jfif
-│   ├── Lennypng.png
-│   ├── Lennypng400px.png
-│   └── Lennypng400px.xcf
+├───js
+│       cadastro.js
 │
-└── js/
-    └── cadastro.js
+└───screenshots
+        tela-cadastro.png
+        tela-inicial.png
 ```
 
 ### Organização dos arquivos 
@@ -128,6 +131,8 @@ Lenny Grana/
 - **JavaScript:** contém os arquivos destinados à implementação de interatividade e funcionalidades.
     - `cadastro.js`: arquivo JavaScript destinado à página de cadastro.
 
+- **Screeshots:** Armazena as screenshots para apresentação no GitHub.
+
 ---
 
 ## 📌 Status do projeto
@@ -137,7 +142,7 @@ Lenny Grana/
 Atualmente, o projeto conta com:
 
 - Página inicial desenvolvida em HTML5 e CSS3.
-- Página de cadastro com estrutura HTML implementada.
+- Página de cadastro com estrutura HTML5 e estilização CSS3 implementada.
 - Organização inicial dos diretórios e arquivos do projeto.
 
 O desenvolvimento está sendo realizado por etapas, começando pela construção da interface e avançando para a implementação das funcionalidades e integração com back-end.
