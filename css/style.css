@@ -2,7 +2,7 @@
 
 :root {
     --verde-escuro: #032d1f;
-    --verde-medio: #00251a;
+    --verde-medio: #067a58;
     --verde-claro: #a6de73;
     --creme: #fcf3e5;
     --branco: #ffffff;
@@ -118,6 +118,10 @@ button {
 .register:hover {
     opacity: 0.85;
     transform: translateY(-2px);
+}
+
+.register a {
+    text-decoration: none;
 }
 
 .login { 
