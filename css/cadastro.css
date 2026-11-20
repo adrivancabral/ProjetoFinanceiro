@@ -154,6 +154,38 @@ button {
     text-decoration: underline;
 }
 
+.campo-senha {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.campo-senha input {
+    padding-right: 45px;
+}
+
+.mostrar-senha {
+    position: absolute;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: var(--verde-escuro);
+    font-size: 1.1rem;
+}
+
+.mostrar-senha:hover {
+    color: var(--verde-medio);
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
 @media (min-width: 701px) {
     .cadastro-container {
         align-items: center;
